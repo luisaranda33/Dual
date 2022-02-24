@@ -167,12 +167,12 @@ if (!isset($_SESSION['access_token'])) {
 
         <div class="input-row">
             <span class="icon"><i class="fa fa-at"></i></span>
-            <input type="email" name="email" placeholder="Email" required />
+            <input type="email" pattern="[A-Za-z0-9_-]{1,15}" name="email" placeholder="Email" required />
         </div>
 
         <div class="input-row">
             <span class="icon"><i class="fa fa-lock"></i></span>
-            <input type="password" name="con" placeholder="Contrase&ntilde;a" required />
+            <input type="password" pattern="[A-Za-z0-9_-]{1,15}" name="con" placeholder="Contrase&ntilde;a" required />
         </div>
 
         <!-- <div class="input-row">
